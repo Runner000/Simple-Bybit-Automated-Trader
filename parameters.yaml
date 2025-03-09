@@ -1,0 +1,42 @@
+account_size: 500
+primary_data_feed: Bybit # Choices: ["Binance", "Bybit"]
+
+bybit_symbol: BTCUSDT
+qty: 0.002
+
+# Parameters meant for modifying individual trades of the strategy (Defining Stoploss, Take Profits, Adjusting Stoploss )
+interval: 15
+sl_s: 1.0
+sl_l: 1.0
+tp_l: 3.0
+tp_s: 3.0
+adj_sl: 1.5
+be: 0.6
+pnlCandle: 5
+pnlPcnt: 0.25
+
+# Parameters meant to modify how the strategy works (EMA periods, etc.)
+vwma_len: 80
+fast_ema_len: 11
+slow_ema_len: 22
+candle_lookback: 2
+median_pcnt: 2
+atr_period: 12
+bband_period: 80
+stddev: 2.0
+trade_dur_min: 3
+
+# Master offsets 
+price_offset: 0.0 
+size_offset: 0.0  
+volatility_offset: 0.0 
+
+# Market Maker Settings
+base_spread: 5
+min_order_size: 0.05
+max_order_size: 0.1
+inventory_extreme: 1
+
+# Volatility settings
+bollinger_band_length: 20
+bollinger_band_std: 2.5
